@@ -1,0 +1,111 @@
+# Logfile created on 2016-09-02 16:38:13 +0530 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:38:13 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4c6c1ded] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [4c6c1ded] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:38:36 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a4e3210c] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [a4e3210c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:38:53 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1c5b099f] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [1c5b099f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:40:23 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [29fa5590] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [29fa5590] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:44:26 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b30becbe] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [b30becbe] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:44:28 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a115753c] Running /usr/bin/env mkdir -p /tmp as webonise@localhost
+ DEBUG [a115753c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:45:00 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 16:45:25 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:08:58 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:12:39 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:15:34 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:16:05 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [28997165] Running /usr/bin/env mkdir -p /tmp on www.example.com
+ DEBUG [28997165] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:25:07 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d11bc0e6] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [d11bc0e6] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:25:15 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b8b2864d] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [b8b2864d] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:25:32 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ac308120] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [ac308120] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:25:49 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [adc582bb] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [adc582bb] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:28:51 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [31863a71] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [31863a71] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:28:57 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d8069177] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [d8069177] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:31:02 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0eef9d3e] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [0eef9d3e] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:31:15 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [68edffa5] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [68edffa5] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:31:18 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [78c22715] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [78c22715] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:31:30 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7973ebdb] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [7973ebdb] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:32:46 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e0907548] Running /usr/bin/env mkdir -p /tmp on http
+ DEBUG [e0907548] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 17:34:03 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a3fd9a29] Running /usr/bin/env mkdir -p /tmp on localhost
+ DEBUG [a3fd9a29] Command: /usr/bin/env mkdir -p /tmp

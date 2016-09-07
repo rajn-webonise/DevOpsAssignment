@@ -1,0 +1,32 @@
+<h1>JurgenMaxMeal#Home</h1>
+
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+  <%= label_tag(:q, "Make sure to add space after an item. Like this \"water burger pizza \"") %>
+<% end %>
+
+<br><br>
+<font style = "padding: 15px">  RestaurantID</font>
+<font style = "padding: 15px">  Price</font>
+<font style = "padding: 20px">  Items</font>
+
+ <br> <hr><br>
+
+<% CSV.foreach(Rails.application.config.data_file) do |row| %>
+<%  row.map!(&:lstrip) %>
+
+<% i=0 %>
+<%  row.each do |x| %>
+<% if i<2 %>
+  <% i+= 1%>
+<font style = "padding: 40px">  <%=  number_with_precision(x, :precision => 2)  %> </font>
+<%next %>
+<% end %>
+
+<%= number_with_precision(x, :precision => 2) + ", " %>
+<%  end %>
+<br>
+<%end %>

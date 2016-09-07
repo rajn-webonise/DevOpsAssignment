@@ -1,0 +1,777 @@
+  [1m[36mSQL (93.9ms)[0m  [1mDELETE FROM "restaurants"[0m
+  [1m[35mSQL (79.4ms)[0m  DELETE FROM "menus"
+  [1m[36mSQL (79.6ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "1"], ["created_at", "2016-09-02 11:41:25.299122"], ["updated_at", "2016-09-02 11:41:25.299122"]]
+  [1m[36m (81.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 144], ["created_at", "2016-09-02 11:41:25.388309"], ["updated_at", "2016-09-02 11:41:25.388309"]]
+  [1m[35m (83.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 391], ["created_at", "2016-09-02 11:41:25.486241"], ["updated_at", "2016-09-02 11:41:25.486241"]]
+  [1m[36m (83.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 8.0], ["rid", 144], ["created_at", "2016-09-02 11:41:25.576201"], ["updated_at", "2016-09-02 11:41:25.576201"]]
+  [1m[35m (83.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "tofu_log"], ["mid", 392], ["created_at", "2016-09-02 11:41:25.661850"], ["updated_at", "2016-09-02 11:41:25.661850"]]
+  [1m[36m (79.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 144], ["created_at", "2016-09-02 11:41:25.744047"], ["updated_at", "2016-09-02 11:41:25.744047"]]
+  [1m[35m (79.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 393], ["created_at", "2016-09-02 11:41:25.825891"], ["updated_at", "2016-09-02 11:41:25.825891"]]
+  [1m[36m (79.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "water"], ["mid", 393], ["created_at", "2016-09-02 11:41:25.906976"], ["updated_at", "2016-09-02 11:41:25.906976"]]
+  [1m[35m (79.5ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "1"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 10.0], ["rid", 144], ["created_at", "2016-09-02 11:41:25.989458"], ["updated_at", "2016-09-02 11:41:25.989458"]]
+  [1m[36m (105.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 394], ["created_at", "2016-09-02 11:41:26.096728"], ["updated_at", "2016-09-02 11:41:26.096728"]]
+  [1m[35m (121.2ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "2"], ["created_at", "2016-09-02 11:41:26.220634"], ["updated_at", "2016-09-02 11:41:26.220634"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 145], ["created_at", "2016-09-02 11:41:26.301574"], ["updated_at", "2016-09-02 11:41:26.301574"]]
+  [1m[36m (80.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "burger"], ["mid", 395], ["created_at", "2016-09-02 11:41:26.384325"], ["updated_at", "2016-09-02 11:41:26.384325"]]
+  [1m[35m (79.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.5], ["rid", 145], ["created_at", "2016-09-02 11:41:26.466328"], ["updated_at", "2016-09-02 11:41:26.466328"]]
+  [1m[36m (78.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 396], ["created_at", "2016-09-02 11:41:26.546712"], ["updated_at", "2016-09-02 11:41:26.546712"]]
+  [1m[35m (79.7ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "3"], ["created_at", "2016-09-02 11:41:26.628529"], ["updated_at", "2016-09-02 11:41:26.628529"]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 146], ["created_at", "2016-09-02 11:41:26.710901"], ["updated_at", "2016-09-02 11:41:26.710901"]]
+  [1m[36m (79.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "chef_salad"], ["mid", 397], ["created_at", "2016-09-02 11:41:26.792201"], ["updated_at", "2016-09-02 11:41:26.792201"]]
+  [1m[35m (79.1ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 146], ["created_at", "2016-09-02 11:41:26.874371"], ["updated_at", "2016-09-02 11:41:26.874371"]]
+  [1m[36m (79.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 398], ["created_at", "2016-09-02 11:41:26.955904"], ["updated_at", "2016-09-02 11:41:26.955904"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "4"], ["created_at", "2016-09-02 11:41:27.037894"], ["updated_at", "2016-09-02 11:41:27.037894"]]
+  [1m[35m (78.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 147], ["created_at", "2016-09-02 11:41:27.118542"], ["updated_at", "2016-09-02 11:41:27.118542"]]
+  [1m[36m (79.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 399], ["created_at", "2016-09-02 11:41:27.199797"], ["updated_at", "2016-09-02 11:41:27.199797"]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 2.5], ["rid", 147], ["created_at", "2016-09-02 11:41:27.283465"], ["updated_at", "2016-09-02 11:41:27.283465"]]
+  [1m[36m (71.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "wine_spritzer"], ["mid", 400], ["created_at", "2016-09-02 11:41:27.356507"], ["updated_at", "2016-09-02 11:41:27.356507"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "5"], ["created_at", "2016-09-02 11:41:27.434692"], ["updated_at", "2016-09-02 11:41:27.434692"]]
+  [1m[35m (104.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 148], ["created_at", "2016-09-02 11:41:27.541496"], ["updated_at", "2016-09-02 11:41:27.541496"]]
+  [1m[36m (74.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 401], ["created_at", "2016-09-02 11:41:27.618056"], ["updated_at", "2016-09-02 11:41:27.618056"]]
+  [1m[35m (73.6ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 148], ["created_at", "2016-09-02 11:41:27.695310"], ["updated_at", "2016-09-02 11:41:27.695310"]]
+  [1m[36m (71.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 402], ["created_at", "2016-09-02 11:41:27.769433"], ["updated_at", "2016-09-02 11:41:27.769433"]]
+  [1m[35m (73.5ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "6"], ["created_at", "2016-09-02 11:41:27.846147"], ["updated_at", "2016-09-02 11:41:27.846147"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 149], ["created_at", "2016-09-02 11:41:27.922095"], ["updated_at", "2016-09-02 11:41:27.922095"]]
+  [1m[36m (72.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 403], ["created_at", "2016-09-02 11:41:27.997179"], ["updated_at", "2016-09-02 11:41:27.997179"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.0], ["rid", 149], ["created_at", "2016-09-02 11:41:28.074620"], ["updated_at", "2016-09-02 11:41:28.074620"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 404], ["created_at", "2016-09-02 11:41:28.149827"], ["updated_at", "2016-09-02 11:41:28.149827"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jalapeno_poppers"], ["mid", 404], ["created_at", "2016-09-02 11:41:28.226014"], ["updated_at", "2016-09-02 11:41:28.226014"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extra_salsa"], ["mid", 404], ["created_at", "2016-09-02 11:41:28.301092"], ["updated_at", "2016-09-02 11:41:28.301092"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "7"], ["created_at", "2016-09-02 11:41:28.378104"], ["updated_at", "2016-09-02 11:41:28.378104"]]
+  [1m[35m (73.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 3.0], ["rid", 150], ["created_at", "2016-09-02 11:41:28.453873"], ["updated_at", "2016-09-02 11:41:28.453873"]]
+  [1m[36m (72.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aa"], ["mid", 405], ["created_at", "2016-09-02 11:41:28.528837"], ["updated_at", "2016-09-02 11:41:28.528837"]]
+  [1m[35m (74.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bb"], ["mid", 405], ["created_at", "2016-09-02 11:41:28.605121"], ["updated_at", "2016-09-02 11:41:28.605121"]]
+  [1m[36m (76.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ccd"], ["mid", 405], ["created_at", "2016-09-02 11:41:28.683194"], ["updated_at", "2016-09-02 11:41:28.683194"]]
+  [1m[35m (73.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 405], ["created_at", "2016-09-02 11:41:28.758091"], ["updated_at", "2016-09-02 11:41:28.758091"]]
+  [1m[36m (74.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 405], ["created_at", "2016-09-02 11:41:28.834459"], ["updated_at", "2016-09-02 11:41:28.834459"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 150], ["created_at", "2016-09-02 11:41:28.912162"], ["updated_at", "2016-09-02 11:41:28.912162"]]
+  [1m[36m (84.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "li"], ["mid", 406], ["created_at", "2016-09-02 11:41:28.998915"], ["updated_at", "2016-09-02 11:41:28.998915"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "w"], ["mid", 406], ["created_at", "2016-09-02 11:41:29.075432"], ["updated_at", "2016-09-02 11:41:29.075432"]]
+  [1m[36m (73.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "q"], ["mid", 406], ["created_at", "2016-09-02 11:41:29.151525"], ["updated_at", "2016-09-02 11:41:29.151525"]]
+  [1m[35m (73.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "i"], ["mid", 406], ["created_at", "2016-09-02 11:41:29.226786"], ["updated_at", "2016-09-02 11:41:29.226786"]]
+  [1m[36m (73.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "o"], ["mid", 406], ["created_at", "2016-09-02 11:41:29.302964"], ["updated_at", "2016-09-02 11:41:29.302964"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "aa"], ["mid", 406], ["created_at", "2016-09-02 11:41:29.379718"], ["updated_at", "2016-09-02 11:41:29.379718"]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 33.0], ["rid", 150], ["created_at", "2016-09-02 11:41:29.455463"], ["updated_at", "2016-09-02 11:41:29.455463"]]
+  [1m[35m (73.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "li"], ["mid", 407], ["created_at", "2016-09-02 11:41:29.530720"], ["updated_at", "2016-09-02 11:41:29.530720"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bb"], ["mid", 407], ["created_at", "2016-09-02 11:41:29.607088"], ["updated_at", "2016-09-02 11:41:29.607088"]]
+  [1m[35m (72.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "xyz"], ["mid", 407], ["created_at", "2016-09-02 11:41:29.681877"], ["updated_at", "2016-09-02 11:41:29.681877"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 407], ["created_at", "2016-09-02 11:41:29.758408"], ["updated_at", "2016-09-02 11:41:29.758408"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "b"], ["mid", 407], ["created_at", "2016-09-02 11:41:29.834608"], ["updated_at", "2016-09-02 11:41:29.834608"]]
+  [1m[36m (165.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 407], ["created_at", "2016-09-02 11:41:30.001971"], ["updated_at", "2016-09-02 11:41:30.001971"]]
+  [1m[35m (79.8ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 0.1], ["rid", 150], ["created_at", "2016-09-02 11:41:30.084795"], ["updated_at", "2016-09-02 11:41:30.084795"]]
+  [1m[36m (78.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 408], ["created_at", "2016-09-02 11:41:30.164979"], ["updated_at", "2016-09-02 11:41:30.164979"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 408], ["created_at", "2016-09-02 11:41:30.246175"], ["updated_at", "2016-09-02 11:41:30.246175"]]
+  [1m[36m (80.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 0.03], ["rid", 150], ["created_at", "2016-09-02 11:41:30.330135"], ["updated_at", "2016-09-02 11:41:30.330135"]]
+  [1m[35m (78.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 409], ["created_at", "2016-09-02 11:41:30.410105"], ["updated_at", "2016-09-02 11:41:30.410105"]]
+  [1m[36m (79.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 409], ["created_at", "2016-09-02 11:41:30.491316"], ["updated_at", "2016-09-02 11:41:30.491316"]]
+  [1m[35m (79.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 409], ["created_at", "2016-09-02 11:41:30.572630"], ["updated_at", "2016-09-02 11:41:30.572630"]]
+  [1m[36m (80.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 45.0], ["rid", 150], ["created_at", "2016-09-02 11:41:30.656230"], ["updated_at", "2016-09-02 11:41:30.656230"]]
+  [1m[35m (78.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 410], ["created_at", "2016-09-02 11:41:30.736716"], ["updated_at", "2016-09-02 11:41:30.736716"]]
+  [1m[36m (106.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 410], ["created_at", "2016-09-02 11:41:30.844921"], ["updated_at", "2016-09-02 11:41:30.844921"]]
+  [1m[35m (80.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (255.6ms)[0m  [1mDELETE FROM "restaurants"[0m
+  [1m[35mSQL (79.4ms)[0m  DELETE FROM "menus"
+  [1m[36mSQL (79.6ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "1"], ["created_at", "2016-09-02 11:42:02.379799"], ["updated_at", "2016-09-02 11:42:02.379799"]]
+  [1m[36m (83.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 151], ["created_at", "2016-09-02 11:42:02.470753"], ["updated_at", "2016-09-02 11:42:02.470753"]]
+  [1m[35m (83.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 411], ["created_at", "2016-09-02 11:42:02.561561"], ["updated_at", "2016-09-02 11:42:02.561561"]]
+  [1m[36m (82.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 8.0], ["rid", 151], ["created_at", "2016-09-02 11:42:02.650332"], ["updated_at", "2016-09-02 11:42:02.650332"]]
+  [1m[35m (83.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "tofu_log"], ["mid", 412], ["created_at", "2016-09-02 11:42:02.735872"], ["updated_at", "2016-09-02 11:42:02.735872"]]
+  [1m[36m (79.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 151], ["created_at", "2016-09-02 11:42:02.818202"], ["updated_at", "2016-09-02 11:42:02.818202"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 413], ["created_at", "2016-09-02 11:42:02.905323"], ["updated_at", "2016-09-02 11:42:02.905323"]]
+  [1m[36m (81.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "water"], ["mid", 413], ["created_at", "2016-09-02 11:42:02.989160"], ["updated_at", "2016-09-02 11:42:02.989160"]]
+  [1m[35m (79.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "1"]]
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 10.0], ["rid", 151], ["created_at", "2016-09-02 11:42:03.072518"], ["updated_at", "2016-09-02 11:42:03.072518"]]
+  [1m[36m (86.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 414], ["created_at", "2016-09-02 11:42:03.161585"], ["updated_at", "2016-09-02 11:42:03.161585"]]
+  [1m[35m (78.8ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "2"], ["created_at", "2016-09-02 11:42:03.243462"], ["updated_at", "2016-09-02 11:42:03.243462"]]
+  [1m[35m (86.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 152], ["created_at", "2016-09-02 11:42:03.331510"], ["updated_at", "2016-09-02 11:42:03.331510"]]
+  [1m[36m (74.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "burger"], ["mid", 415], ["created_at", "2016-09-02 11:42:03.407859"], ["updated_at", "2016-09-02 11:42:03.407859"]]
+  [1m[35m (72.9ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.5], ["rid", 152], ["created_at", "2016-09-02 11:42:03.483926"], ["updated_at", "2016-09-02 11:42:03.483926"]]
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 416], ["created_at", "2016-09-02 11:42:03.559253"], ["updated_at", "2016-09-02 11:42:03.559253"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "3"], ["created_at", "2016-09-02 11:42:03.636293"], ["updated_at", "2016-09-02 11:42:03.636293"]]
+  [1m[35m (72.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 153], ["created_at", "2016-09-02 11:42:03.710695"], ["updated_at", "2016-09-02 11:42:03.710695"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "chef_salad"], ["mid", 417], ["created_at", "2016-09-02 11:42:03.786917"], ["updated_at", "2016-09-02 11:42:03.786917"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 153], ["created_at", "2016-09-02 11:42:03.864318"], ["updated_at", "2016-09-02 11:42:03.864318"]]
+  [1m[36m (73.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 418], ["created_at", "2016-09-02 11:42:03.939590"], ["updated_at", "2016-09-02 11:42:03.939590"]]
+  [1m[35m (73.2ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "4"], ["created_at", "2016-09-02 11:42:04.015300"], ["updated_at", "2016-09-02 11:42:04.015300"]]
+  [1m[35m (73.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 154], ["created_at", "2016-09-02 11:42:04.091157"], ["updated_at", "2016-09-02 11:42:04.091157"]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 419], ["created_at", "2016-09-02 11:42:04.167364"], ["updated_at", "2016-09-02 11:42:04.167364"]]
+  [1m[35m (73.0ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 2.5], ["rid", 154], ["created_at", "2016-09-02 11:42:04.243414"], ["updated_at", "2016-09-02 11:42:04.243414"]]
+  [1m[36m (73.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "wine_spritzer"], ["mid", 420], ["created_at", "2016-09-02 11:42:04.318943"], ["updated_at", "2016-09-02 11:42:04.318943"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "5"], ["created_at", "2016-09-02 11:42:04.395730"], ["updated_at", "2016-09-02 11:42:04.395730"]]
+  [1m[35m (72.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 155], ["created_at", "2016-09-02 11:42:04.470123"], ["updated_at", "2016-09-02 11:42:04.470123"]]
+  [1m[36m (74.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 421], ["created_at", "2016-09-02 11:42:04.546448"], ["updated_at", "2016-09-02 11:42:04.546448"]]
+  [1m[35m (76.1ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 155], ["created_at", "2016-09-02 11:42:04.625796"], ["updated_at", "2016-09-02 11:42:04.625796"]]
+  [1m[36m (84.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 422], ["created_at", "2016-09-02 11:42:04.712523"], ["updated_at", "2016-09-02 11:42:04.712523"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "6"], ["created_at", "2016-09-02 11:42:04.789439"], ["updated_at", "2016-09-02 11:42:04.789439"]]
+  [1m[35m (73.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 156], ["created_at", "2016-09-02 11:42:04.865238"], ["updated_at", "2016-09-02 11:42:04.865238"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 423], ["created_at", "2016-09-02 11:42:04.940274"], ["updated_at", "2016-09-02 11:42:04.940274"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.0], ["rid", 156], ["created_at", "2016-09-02 11:42:05.017622"], ["updated_at", "2016-09-02 11:42:05.017622"]]
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 424], ["created_at", "2016-09-02 11:42:05.093146"], ["updated_at", "2016-09-02 11:42:05.093146"]]
+  [1m[35m (72.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jalapeno_poppers"], ["mid", 424], ["created_at", "2016-09-02 11:42:05.167866"], ["updated_at", "2016-09-02 11:42:05.167866"]]
+  [1m[36m (74.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extra_salsa"], ["mid", 424], ["created_at", "2016-09-02 11:42:05.244200"], ["updated_at", "2016-09-02 11:42:05.244200"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "7"], ["created_at", "2016-09-02 11:42:05.321283"], ["updated_at", "2016-09-02 11:42:05.321283"]]
+  [1m[35m (72.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 3.0], ["rid", 157], ["created_at", "2016-09-02 11:42:05.395738"], ["updated_at", "2016-09-02 11:42:05.395738"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aa"], ["mid", 425], ["created_at", "2016-09-02 11:42:05.471945"], ["updated_at", "2016-09-02 11:42:05.471945"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bb"], ["mid", 425], ["created_at", "2016-09-02 11:42:05.548325"], ["updated_at", "2016-09-02 11:42:05.548325"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ccd"], ["mid", 425], ["created_at", "2016-09-02 11:42:05.624579"], ["updated_at", "2016-09-02 11:42:05.624579"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 425], ["created_at", "2016-09-02 11:42:05.699653"], ["updated_at", "2016-09-02 11:42:05.699653"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 425], ["created_at", "2016-09-02 11:42:05.775945"], ["updated_at", "2016-09-02 11:42:05.775945"]]
+  [1m[35m (76.7ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 157], ["created_at", "2016-09-02 11:42:05.855656"], ["updated_at", "2016-09-02 11:42:05.855656"]]
+  [1m[36m (78.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "li"], ["mid", 426], ["created_at", "2016-09-02 11:42:05.935771"], ["updated_at", "2016-09-02 11:42:05.935771"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "w"], ["mid", 426], ["created_at", "2016-09-02 11:42:06.016934"], ["updated_at", "2016-09-02 11:42:06.016934"]]
+  [1m[36m (80.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "q"], ["mid", 426], ["created_at", "2016-09-02 11:42:06.099698"], ["updated_at", "2016-09-02 11:42:06.099698"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "i"], ["mid", 426], ["created_at", "2016-09-02 11:42:06.180961"], ["updated_at", "2016-09-02 11:42:06.180961"]]
+  [1m[36m (79.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "o"], ["mid", 426], ["created_at", "2016-09-02 11:42:06.262182"], ["updated_at", "2016-09-02 11:42:06.262182"]]
+  [1m[35m (79.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "aa"], ["mid", 426], ["created_at", "2016-09-02 11:42:06.343375"], ["updated_at", "2016-09-02 11:42:06.343375"]]
+  [1m[36m (80.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 33.0], ["rid", 157], ["created_at", "2016-09-02 11:42:06.427083"], ["updated_at", "2016-09-02 11:42:06.427083"]]
+  [1m[35m (78.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "li"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.507560"], ["updated_at", "2016-09-02 11:42:06.507560"]]
+  [1m[36m (78.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bb"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.588728"], ["updated_at", "2016-09-02 11:42:06.588728"]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "xyz"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.671231"], ["updated_at", "2016-09-02 11:42:06.671231"]]
+  [1m[36m (79.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.752525"], ["updated_at", "2016-09-02 11:42:06.752525"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "b"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.833721"], ["updated_at", "2016-09-02 11:42:06.833721"]]
+  [1m[36m (79.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 427], ["created_at", "2016-09-02 11:42:06.914967"], ["updated_at", "2016-09-02 11:42:06.914967"]]
+  [1m[35m (149.9ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 0.1], ["rid", 157], ["created_at", "2016-09-02 11:42:07.067756"], ["updated_at", "2016-09-02 11:42:07.067756"]]
+  [1m[36m (89.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 428], ["created_at", "2016-09-02 11:42:07.159519"], ["updated_at", "2016-09-02 11:42:07.159519"]]
+  [1m[35m (79.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 428], ["created_at", "2016-09-02 11:42:07.240534"], ["updated_at", "2016-09-02 11:42:07.240534"]]
+  [1m[36m (79.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 0.03], ["rid", 157], ["created_at", "2016-09-02 11:42:07.323109"], ["updated_at", "2016-09-02 11:42:07.323109"]]
+  [1m[35m (78.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 429], ["created_at", "2016-09-02 11:42:07.403166"], ["updated_at", "2016-09-02 11:42:07.403166"]]
+  [1m[36m (80.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 429], ["created_at", "2016-09-02 11:42:07.485909"], ["updated_at", "2016-09-02 11:42:07.485909"]]
+  [1m[35m (78.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 429], ["created_at", "2016-09-02 11:42:07.567233"], ["updated_at", "2016-09-02 11:42:07.567233"]]
+  [1m[36m (78.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 45.0], ["rid", 157], ["created_at", "2016-09-02 11:42:07.649435"], ["updated_at", "2016-09-02 11:42:07.649435"]]
+  [1m[35m (79.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 430], ["created_at", "2016-09-02 11:42:07.731178"], ["updated_at", "2016-09-02 11:42:07.731178"]]
+  [1m[36m (78.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 430], ["created_at", "2016-09-02 11:42:07.812207"], ["updated_at", "2016-09-02 11:42:07.812207"]]
+  [1m[35m (79.4ms)[0m  commit transaction
+  [1m[36mSQL (92.7ms)[0m  [1mDELETE FROM "restaurants"[0m
+  [1m[35mSQL (74.7ms)[0m  DELETE FROM "menus"
+  [1m[36mSQL (74.2ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "1"], ["created_at", "2016-09-02 11:54:33.941611"], ["updated_at", "2016-09-02 11:54:33.941611"]]
+  [1m[36m (79.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 158], ["created_at", "2016-09-02 11:54:34.027905"], ["updated_at", "2016-09-02 11:54:34.027905"]]
+  [1m[35m (77.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 431], ["created_at", "2016-09-02 11:54:34.112657"], ["updated_at", "2016-09-02 11:54:34.112657"]]
+  [1m[36m (76.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 8.0], ["rid", 158], ["created_at", "2016-09-02 11:54:34.194817"], ["updated_at", "2016-09-02 11:54:34.194817"]]
+  [1m[35m (80.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "tofu_log"], ["mid", 432], ["created_at", "2016-09-02 11:54:34.277579"], ["updated_at", "2016-09-02 11:54:34.277579"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "1"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 4.0], ["rid", 158], ["created_at", "2016-09-02 11:54:34.354969"], ["updated_at", "2016-09-02 11:54:34.354969"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "burger"], ["mid", 433], ["created_at", "2016-09-02 11:54:34.430253"], ["updated_at", "2016-09-02 11:54:34.430253"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "water"], ["mid", 433], ["created_at", "2016-09-02 11:54:34.505213"], ["updated_at", "2016-09-02 11:54:34.505213"]]
+  [1m[35m (74.5ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "1"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 10.0], ["rid", 158], ["created_at", "2016-09-02 11:54:34.582669"], ["updated_at", "2016-09-02 11:54:34.582669"]]
+  [1m[36m (73.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 434], ["created_at", "2016-09-02 11:54:34.657803"], ["updated_at", "2016-09-02 11:54:34.657803"]]
+  [1m[35m (73.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "2"], ["created_at", "2016-09-02 11:54:34.733621"], ["updated_at", "2016-09-02 11:54:34.733621"]]
+  [1m[35m (73.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 159], ["created_at", "2016-09-02 11:54:34.809506"], ["updated_at", "2016-09-02 11:54:34.809506"]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "burger"], ["mid", 435], ["created_at", "2016-09-02 11:54:34.885958"], ["updated_at", "2016-09-02 11:54:34.885958"]]
+  [1m[35m (72.6ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "2"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.5], ["rid", 159], ["created_at", "2016-09-02 11:54:34.961975"], ["updated_at", "2016-09-02 11:54:34.961975"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tofu_log"], ["mid", 436], ["created_at", "2016-09-02 11:54:35.037618"], ["updated_at", "2016-09-02 11:54:35.037618"]]
+  [1m[35m (80.2ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "3"], ["created_at", "2016-09-02 11:54:35.122030"], ["updated_at", "2016-09-02 11:54:35.122030"]]
+  [1m[35m (98.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 160], ["created_at", "2016-09-02 11:54:35.221906"], ["updated_at", "2016-09-02 11:54:35.221906"]]
+  [1m[36m (100.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "chef_salad"], ["mid", 437], ["created_at", "2016-09-02 11:54:35.324127"], ["updated_at", "2016-09-02 11:54:35.324127"]]
+  [1m[35m (74.1ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "3"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 160], ["created_at", "2016-09-02 11:54:35.401551"], ["updated_at", "2016-09-02 11:54:35.401551"]]
+  [1m[36m (97.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 438], ["created_at", "2016-09-02 11:54:35.500794"], ["updated_at", "2016-09-02 11:54:35.500794"]]
+  [1m[35m (109.0ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "4"], ["created_at", "2016-09-02 11:54:35.612860"], ["updated_at", "2016-09-02 11:54:35.612860"]]
+  [1m[35m (105.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 161], ["created_at", "2016-09-02 11:54:35.720258"], ["updated_at", "2016-09-02 11:54:35.720258"]]
+  [1m[36m (108.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "steak_salad_sandwich"], ["mid", 439], ["created_at", "2016-09-02 11:54:35.830868"], ["updated_at", "2016-09-02 11:54:35.830868"]]
+  [1m[35m (105.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "4"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 2.5], ["rid", 161], ["created_at", "2016-09-02 11:54:35.939614"], ["updated_at", "2016-09-02 11:54:35.939614"]]
+  [1m[36m (105.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "wine_spritzer"], ["mid", 440], ["created_at", "2016-09-02 11:54:36.046918"], ["updated_at", "2016-09-02 11:54:36.046918"]]
+  [1m[35m (134.8ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "5"], ["created_at", "2016-09-02 11:54:36.184102"], ["updated_at", "2016-09-02 11:54:36.184102"]]
+  [1m[35m (106.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 162], ["created_at", "2016-09-02 11:54:36.292037"], ["updated_at", "2016-09-02 11:54:36.292037"]]
+  [1m[36m (107.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 441], ["created_at", "2016-09-02 11:54:36.401742"], ["updated_at", "2016-09-02 11:54:36.401742"]]
+  [1m[35m (171.1ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "5"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 8.0], ["rid", 162], ["created_at", "2016-09-02 11:54:36.576076"], ["updated_at", "2016-09-02 11:54:36.576076"]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 442], ["created_at", "2016-09-02 11:54:36.683202"], ["updated_at", "2016-09-02 11:54:36.683202"]]
+  [1m[35m (109.1ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "6"], ["created_at", "2016-09-02 11:54:36.795596"], ["updated_at", "2016-09-02 11:54:36.795596"]]
+  [1m[35m (112.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 5.0], ["rid", 163], ["created_at", "2016-09-02 11:54:36.911332"], ["updated_at", "2016-09-02 11:54:36.911332"]]
+  [1m[36m (105.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fancy_european_water"], ["mid", 443], ["created_at", "2016-09-02 11:54:37.019552"], ["updated_at", "2016-09-02 11:54:37.019552"]]
+  [1m[35m (107.5ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "6"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 6.0], ["rid", 163], ["created_at", "2016-09-02 11:54:37.130941"], ["updated_at", "2016-09-02 11:54:37.130941"]]
+  [1m[36m (129.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extreme_fajita"], ["mid", 444], ["created_at", "2016-09-02 11:54:37.262321"], ["updated_at", "2016-09-02 11:54:37.262321"]]
+  [1m[35m (121.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jalapeno_poppers"], ["mid", 444], ["created_at", "2016-09-02 11:54:37.389931"], ["updated_at", "2016-09-02 11:54:37.389931"]]
+  [1m[36m (82.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "extra_salsa"], ["mid", 444], ["created_at", "2016-09-02 11:54:37.474555"], ["updated_at", "2016-09-02 11:54:37.474555"]]
+  [1m[35m (81.0ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "7"], ["created_at", "2016-09-02 11:54:37.557964"], ["updated_at", "2016-09-02 11:54:37.557964"]]
+  [1m[35m (78.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 3.0], ["rid", 164], ["created_at", "2016-09-02 11:54:37.638672"], ["updated_at", "2016-09-02 11:54:37.638672"]]
+  [1m[36m (79.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aa"], ["mid", 445], ["created_at", "2016-09-02 11:54:37.719950"], ["updated_at", "2016-09-02 11:54:37.719950"]]
+  [1m[35m (80.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bb"], ["mid", 445], ["created_at", "2016-09-02 11:54:37.802344"], ["updated_at", "2016-09-02 11:54:37.802344"]]
+  [1m[36m (79.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ccd"], ["mid", 445], ["created_at", "2016-09-02 11:54:37.883615"], ["updated_at", "2016-09-02 11:54:37.883615"]]
+  [1m[35m (79.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 445], ["created_at", "2016-09-02 11:54:37.965086"], ["updated_at", "2016-09-02 11:54:37.965086"]]
+  [1m[36m (79.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 445], ["created_at", "2016-09-02 11:54:38.046589"], ["updated_at", "2016-09-02 11:54:38.046589"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 4.0], ["rid", 164], ["created_at", "2016-09-02 11:54:38.123802"], ["updated_at", "2016-09-02 11:54:38.123802"]]
+  [1m[36m (73.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "li"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.199263"], ["updated_at", "2016-09-02 11:54:38.199263"]]
+  [1m[35m (73.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "w"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.274320"], ["updated_at", "2016-09-02 11:54:38.274320"]]
+  [1m[36m (74.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "q"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.350520"], ["updated_at", "2016-09-02 11:54:38.350520"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "i"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.426954"], ["updated_at", "2016-09-02 11:54:38.426954"]]
+  [1m[36m (74.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "o"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.503293"], ["updated_at", "2016-09-02 11:54:38.503293"]]
+  [1m[35m (73.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "aa"], ["mid", 446], ["created_at", "2016-09-02 11:54:38.578147"], ["updated_at", "2016-09-02 11:54:38.578147"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 33.0], ["rid", 164], ["created_at", "2016-09-02 11:54:38.655878"], ["updated_at", "2016-09-02 11:54:38.655878"]]
+  [1m[35m (73.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "li"], ["mid", 447], ["created_at", "2016-09-02 11:54:38.731169"], ["updated_at", "2016-09-02 11:54:38.731169"]]
+  [1m[36m (72.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bb"], ["mid", 447], ["created_at", "2016-09-02 11:54:38.806199"], ["updated_at", "2016-09-02 11:54:38.806199"]]
+  [1m[35m (76.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "xyz"], ["mid", 447], ["created_at", "2016-09-02 11:54:38.885124"], ["updated_at", "2016-09-02 11:54:38.885124"]]
+  [1m[36m (88.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 447], ["created_at", "2016-09-02 11:54:38.975484"], ["updated_at", "2016-09-02 11:54:38.975484"]]
+  [1m[35m (72.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "b"], ["mid", 447], ["created_at", "2016-09-02 11:54:39.050511"], ["updated_at", "2016-09-02 11:54:39.050511"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 447], ["created_at", "2016-09-02 11:54:39.126833"], ["updated_at", "2016-09-02 11:54:39.126833"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?[0m  [["title", "7"]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1  [["title", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["price", 0.1], ["rid", 164], ["created_at", "2016-09-02 11:54:39.204064"], ["updated_at", "2016-09-02 11:54:39.204064"]]
+  [1m[36m (73.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["mid", 448], ["created_at", "2016-09-02 11:54:39.279628"], ["updated_at", "2016-09-02 11:54:39.279628"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 448], ["created_at", "2016-09-02 11:54:39.356354"], ["updated_at", "2016-09-02 11:54:39.356354"]]
+  [1m[36m (73.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 0.03], ["rid", 164], ["created_at", "2016-09-02 11:54:39.433978"], ["updated_at", "2016-09-02 11:54:39.433978"]]
+  [1m[35m (72.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 449], ["created_at", "2016-09-02 11:54:39.509078"], ["updated_at", "2016-09-02 11:54:39.509078"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "b"], ["mid", 449], ["created_at", "2016-09-02 11:54:39.584021"], ["updated_at", "2016-09-02 11:54:39.584021"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "c"], ["mid", 449], ["created_at", "2016-09-02 11:54:39.660316"], ["updated_at", "2016-09-02 11:54:39.660316"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ?  [["title", "7"]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."title" = ? LIMIT 1[0m  [["title", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "menus" ("price", "rid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 45.0], ["rid", 164], ["created_at", "2016-09-02 11:54:39.737850"], ["updated_at", "2016-09-02 11:54:39.737850"]]
+  [1m[35m (71.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "a"], ["mid", 450], ["created_at", "2016-09-02 11:54:39.811772"], ["updated_at", "2016-09-02 11:54:39.811772"]]
+  [1m[36m (74.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "mid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "c"], ["mid", 450], ["created_at", "2016-09-02 11:54:39.888139"], ["updated_at", "2016-09-02 11:54:39.888139"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 451ms (Views: 441.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:42 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-09-02 17:24:44 +0530
