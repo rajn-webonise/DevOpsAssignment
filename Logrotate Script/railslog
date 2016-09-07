@@ -1,0 +1,15 @@
+# Place in logrotate.d directory. For running manually, use: logrotate -v -f /etc/logrotate.d/railslog
+
+
+/home/webonise/raj/JurgenMaxMeal/log/development.log {
+  su root
+  daily
+  size 10k
+  missingok
+  notifempty
+  rotate 4
+  compress
+  delaycompress
+  copytruncate
+  nodateext
+ }
